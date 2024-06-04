@@ -8,9 +8,7 @@ export class UserService {
   constructor(
     @Inject(getStoreKey('user2.json'))
     private storeService: StoreService,
-  ) {
-    console.log('Debug_here this.storeService: ', this.storeService);
-  }
+  ) {}
 
   createUser(user: UserDTO): UserDTO {
     user.createdAt = new Date();
